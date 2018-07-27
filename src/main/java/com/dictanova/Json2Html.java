@@ -16,6 +16,11 @@ public class Json2Html {
 
     public static void main(String[] args) throws Exception {
 
+        if (args.length < 2) {
+                System.out.println("Usage:\nJson2Html input.json output.html");
+                System.exit(1);
+        }
+        
         File input = new File(args[0]);
         File output = new File(args[1]);
 
